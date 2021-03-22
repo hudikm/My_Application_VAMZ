@@ -29,6 +29,10 @@ class FirstFragment : Fragment() {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
     override fun onPause() {
         super.onPause()
         val  contx = this.context
