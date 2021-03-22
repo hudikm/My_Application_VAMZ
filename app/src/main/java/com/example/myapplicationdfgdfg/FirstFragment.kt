@@ -28,4 +28,9 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
+
+    override fun onPause() {
+        super.onPause()
+        val  contx = this.context
+    }
 }
